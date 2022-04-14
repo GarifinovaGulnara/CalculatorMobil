@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalculatorMobil.View.MainPage" NavigationPage.HasNavigationBar="False">
+
+    <StackLayout>
+        <StackLayout VerticalOptions="FillAndExpand">
+            <Label x:Name="Answer" Text="{Binding Answer}" FontSize="40" VerticalOptions="EndAndExpand" VerticalTextAlignment="End"
+                   HorizontalTextAlignment="End" Margin="30"
+                   HeightRequest="500" TextColor="Black"/>
+        </StackLayout>
+        
+        <StackLayout BackgroundColor="#FFCA69" VerticalOptions="EndAndExpand" Padding="20" x:Name="Panel">
+            <StackLayout Orientation="Horizontal">
+                <Button Text="1" BackgroundColor="#D86313" TextColor="White" Command="{Binding OneCommand}"/>
+                <Button Text="2" BackgroundColor="#D86313" TextColor="White" Command="{Binding TwoCommand}"/>
+                <Button Text="3" BackgroundColor="#D86313" TextColor="White" Command="{Binding ThreeCommand}"/>
+                <Button Text="+" BackgroundColor="#D86313" TextColor="White" Command="{Binding PlusCommand}"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Button Text="4" BackgroundColor="#D86313" TextColor="White" Command="{Binding FourCommand}"/>
+                <Button Text="5" BackgroundColor="#D86313" TextColor="White" Command="{Binding FiveCommand}"/>
+                <Button Text="6" BackgroundColor="#D86313" TextColor="White" Command="{Binding SixCommand}"/>
+                <Button Text="-" BackgroundColor="#D86313" TextColor="White" Command="{Binding MinusCommand}"/>
+            </StackLayout>
+            
+            <StackLayout Orientation="Horizontal">
+                <Button Text="7" BackgroundColor="#D86313" TextColor="White" Command="{Binding SevenCommand}"/>
+                <Button Text="8" BackgroundColor="#D86313" TextColor="White" Command="{Binding EightCommand}"/>
+                <Button Text="9" BackgroundColor="#D86313" TextColor="White" Command="{Binding NineCommand}"/>
+                <Button Text="*" BackgroundColor="#D86313" TextColor="White" Command="{Binding MultiCommand}"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Button Text="AC" BackgroundColor="#D86313" TextColor="White" Command="{Binding ClearCommand}"/>
+                <Button Text="0" BackgroundColor="#D86313" TextColor="White" Command="{Binding ZeroCommand}"/>
+                <Button Text="/" BackgroundColor="#D86313" TextColor="White" Command="{Binding DivisionCommand}"/>
+                <Button Text="=" BackgroundColor="#D86313" TextColor="White" Command="{Binding EqualsCommand}"/>
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

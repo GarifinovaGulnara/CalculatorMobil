@@ -5,14 +5,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using System.Data;
+using CalculatorMobil.ViewModal;
 
-namespace CalculatorMobil
+namespace CalculatorMobil.View
 {
     public partial class MainPage : ContentPage
     {
         public MainPage()
         {
             InitializeComponent();
+            BindingContext = new MainVM();
         }
     }
 }
